@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Technical Documentation</title>
+  <link rel="stylesheet" href="Day2_MiniProject.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Left Navigation (Sidebar) -->
+    <nav class="sidebar">
+      <h2>Documentation</h2>
+      <ul>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#html-basics">HTML Basics</a></li>
+        <li><a href="#html-advanced">HTML Advanced</a></li>
+        <li><a href="#css-basics">CSS Basics</a></li>
+        <li><a href="#css-advanced">CSS Advanced</a></li>
+      </ul>
+    </nav>
+
+    <!-- Right Content Area -->
+    <div class="content">
+      <section id="intro" class="doc-section">
+        <h2>Introduction</h2>
+        <h3>Welcome to my technical documentation page. This project is a simple demonstration of my previous learnings.</h3>
+        <p><strong>First some theory about Web/Websites and their working</strong></p>
+        <ul>
+            <li>
+              <strong>How web work?</strong>
+              <p>The web works on a client-server model where a browser (the client) sends a request to a web server, which then responds by serving up web pages, scripts, images, or other resources. This communication happens over the Internet using standardized protocols such as HTTP/HTTPS.</p>
+            </li>
+            <li>
+              <strong>What is DNS?</strong>
+              <p>DNS, or Domain Name System, is like the phonebook of the Internet. It translates human-readable domain names (like example.com) into IP addresses, which computers use to identify and communicate with each other.</p>
+            </li>
+            <li>
+              <strong>What is Internet?</strong>
+              <p>The Internet is a global network of interconnected computers and devices that communicate through standardized protocols. It enables the sharing of information and services, ranging from email and websites to streaming media and online gaming.</p>
+            </li>
+            <li>
+              <strong>What is hosting?</strong>
+              <p>Hosting refers to the service of storing a website's files on a server connected to the Internet. This allows users to access the site via a domain name, making the website publicly available online.</p>
+            </li>
+          </ul>
+      </section>
+
+      <section id="html-basics" class="doc-section">
+        <h2>HTML Basics</h2>
+        <p><strong>This section covers basic HTML concepts.</strong></p>
+        <p>HTML (HyperText Markup Language) is the standard markup language used for creating web pages. It is composed of elements (tags) and attributes that define the structure and content of a webpage.</p>
+        <ul>
+          <li>
+            <strong>Elements + Attributes:</strong> HTML is made up of elements, which are represented by tags such as &lt;p&gt;, &lt;div&gt;, or &lt;span&gt;. Elements can contain content and other nested elements. Attributes provide extra details about these elements, such as IDs, classes, or source paths, and are included within the opening tag to modify element behavior or appearance.
+          </li>
+          <li>
+            <strong>Forms + Input Type:</strong> HTML forms, defined by the &lt;form&gt; element, are used to collect user data. Inside a form, various &lt;input&gt; types are employed to capture different kinds of information such as text, email, passwords, numbers, and more. Other form elements like &lt;textarea&gt;, &lt;select&gt;, and &lt;button&gt; further help in gathering user input in a structured manner.
+          </li>
+          <li>
+            <strong>Imports + META Tags:</strong> The &lt;link&gt; and &lt;script&gt; tags are used to import external resources like stylesheets and JavaScript files into an HTML document. META tags, placed in the &lt;head&gt; section, provide essential information about the page, such as the character set, viewport settings for responsive design, and metadata for search engines, which helps control how the document is handled and displayed.
+          </li>
+          <li>
+            <strong>Lists &amp; Anchor:</strong> HTML supports creating ordered lists (&lt;ol&gt;), unordered lists (&lt;ul&gt;), and definition lists (&lt;dl&gt;), which are useful for organizing items in a structured manner. The &lt;a&gt; (anchor) element is used for creating hyperlinks, enabling navigation to external pages, internal sections, or even email addresses. Anchors are vital for both navigation and establishing relationships among content within a document.
+          </li>
+          <li>
+            <strong>Tables:</strong> Tables in HTML are created using the &lt;table&gt; element and its associated tags, such as &lt;tr&gt;, &lt;th&gt;, and &lt;td&gt;. They are used to display data in a tabular format, with rows and columns, making it easier for users to read and compare information systematically. Using elements like &lt;thead&gt;, &lt;tbody&gt;, and &lt;tfoot&gt; can also add semantic structure to your table data.
+          </li>
+        </ul>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9SEIgd28_EmBklsO_Kpuw2AgPJ5bbEko3Vw&s" alt="CSS Basics Diagram">
+      </section>
+      
+      <section id="html-advanced" class="doc-section">
+        <h2>HTML Advanced</h2>
+  <p><strong>This section covers advanced HTML topics that enhance web interactivity and multimedia integration.</strong></p>
+  <ul>
+    <li>
+      <strong>Events:</strong> HTML events allow you to create interactive webpages by responding to user actions like clicks, key presses, and mouse movements. Event handling is typically done using JavaScript, where developers attach event listeners to elements to execute code when an event occurs. For example, clicking a button might trigger a JavaScript function.
+    </li>
+    <li>
+      <strong>Web Storage:</strong> Web Storage provides a way to store key/value pairs locally within the user's browser. Two primary storage types are used: <code>localStorage</code> for persistent storage across sessions, and <code>sessionStorage</code> for temporary storage that lasts only as long as the browser tab remains open. This is useful for saving user preferences and data without involving cookies.
+    </li>
+    <li>
+      <strong>Image &amp; Multimedia:</strong> HTML supports embedding images, audio, and video to create rich multimedia experiences. The <code>&lt;img&gt;</code> tag displays images, while the <code>&lt;video&gt;</code> and <code>&lt;audio&gt;</code> tags are used to embed videos and sound files, respectively. These elements often include attributes like <code>src</code>, <code>controls</code>, and <code>alt</code> to provide proper functionality and accessibility.
+    </li>
+    <li>
+      <strong>Frame:</strong> Although traditional frames using the <code>&lt;frame&gt;</code> tag are now outdated, modern HTML uses the <code>&lt;iframe&gt;</code> element to embed another HTML document within the current page. Iframes are useful for displaying content like maps, advertisements, or external web pages without redirecting the user.
+    </li>
+    <li>
+      <strong>Canvas &amp; WebGL:</strong> The <code>&lt;canvas&gt;</code> element allows for dynamic, scriptable rendering of 2D shapes and images, often used for animations, charts, and games. WebGL extends this functionality to render interactive 3D graphics directly in the browser, providing a powerful platform for complex visualizations and applications.
+    </li>
+    <img src="https://www.designveloper.com/wp-content/uploads/2022/07/Designveloper-What-Is-HTML-1200x720.png" alt="CSS Basics Diagram">
+
+  </ul>
+      </section>
+      
+      <section id="css-basics" class="doc-section">
+        <h2>CSS Basics</h2>
+  <p><strong>This section explains the fundamental concepts of CSS that are essential for styling web pages.</strong></p>
+  <ul>
+    <li>
+      <strong>Selectors:</strong> CSS selectors are patterns used to choose the elements you want to style. They include basic selectors like type, class, and ID selectors, as well as more complex ones such as descendant, attribute, or pseudo-class selectors.
+    </li>
+    <li>
+      <strong>Pseudo Selectors:</strong> These selectors, such as <code>:hover</code>, <code>:active</code>, and <code>:first-child</code>, target elements based on their state or position in the document tree, enabling interactive styling.
+    </li>
+    <li>
+      <strong>Box Model:</strong> The box model outlines how an element’s content, padding, border, and margin contribute to its total dimensions. Mastering the box model is key to managing spacing and layout effectively.
+    </li>
+    <li>
+      <strong>Units &amp; Display:</strong> CSS uses various units (e.g., pixels, em, rem, percentages) to define sizes. The <code>display</code> property determines how elements are rendered (block, inline, inline-block, etc.), impacting layout behavior.
+    </li>
+  </ul>
+  <img src="https://cdn.prod.website-files.com/64a6f67b79a80fd9ff31ca7a/651861925d86eb8b1c8d90b0_651189e081964b9002b1e6d1_64c2586cc3eccac8b6a2e3a9_tb.png" alt="CSS Basics Diagram">
+
+      </section>
+      
+      <section id="css-advanced" class="doc-section">
+        <h2>CSS Advanced</h2>
+  <p><strong>This section covers advanced CSS topics and techniques that empower modern web design and responsive layouts.</strong></p>
+  <ul>
+    <li>
+      <strong>Flexbox &amp; Grid:</strong> Flexbox provides a one-dimensional layout for aligning elements in rows or columns, while Grid offers a two-dimensional layout system to create complex and responsive page structures.
+    </li>
+    <li>
+      <strong>CSS Variables:</strong> Also known as custom properties, CSS variables allow you to define reusable values that can be referenced throughout your stylesheet, simplifying theme management and maintenance.
+    </li>
+    <li>
+      <strong>Media Queries:</strong> Media queries let you apply different styles based on the characteristics of the device or screen (such as width or resolution), ensuring your design adapts gracefully to all devices.
+    </li>
+    <li>
+      <strong>Transitions &amp; Transforms:</strong> These properties enable you to animate changes to CSS properties, creating smooth visual effects and interactive elements without using JavaScript.
+    </li>
+    <li>
+      <strong>Specificity &amp; Inheritance:</strong> Understanding CSS specificity helps resolve conflicts when multiple rules apply to an element, and inheritance allows child elements to acquire styles from their parent elements, streamlining your code.
+    </li>
+  </ul>
+  <img src="https://www.lambdatest.com/blog/wp-content/uploads/2024/04/Advanced-CSS.png" alt="CSS Basics Diagram">
+
+      </section>
+    </div>
+  </div>
+</body>
+</html>
