@@ -1,0 +1,139 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #ecf0f1;
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #3498db;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #1abc9c;
+  }
+  
+  /* Container Layout using Flex */
+  .container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  /* Navigation Panel */
+  .sidebar {
+    width: 220px;
+    background: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+  }
+  
+  .sidebar h2 {
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 15px;
+  }
+  
+  .sidebar li a {
+    color: #fff;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .sidebar li a:hover,
+  .sidebar li a:focus {
+    background: #3498db;
+    transform: scale(1.02);
+  }
+  
+  /* Main Content Area */
+  .content {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+  }
+  
+  /* Documentation Section Style */
+  .doc-section {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .doc-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  }
+  
+  .doc-section h2 {
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  
+  /* Image styling */
+  .doc-section img {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 10px 0;
+    border: 2px solid #3498db;
+    padding: 5px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .doc-section img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  
+  /* Keyframe animation for text highlight */
+  @keyframes textHighlight {
+    from { background-color: yellow; }
+    to { background-color: transparent; }
+  }
+  
+  /* animation on paragraphs */
+  .doc-section p:hover {
+    animation: textHighlight 1s ease-out;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    
+    .sidebar {
+      position: relative;
+      width: 100%;
+      height: auto;
+    }
+    
+    .content {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+  
