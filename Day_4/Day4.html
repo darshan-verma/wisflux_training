@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Triangle area</title>
+    <link rel="stylesheet" href="Day4.css">
+
+  </head>
+  <body>
+    <!-- Triangle -->
+     <div class="triangle-box">
+    <h1>1. Triangle Area Calculator</h1>
+    <p>
+      For a triangle with sides 5, 6, 7, the area is :
+      <span id="area"></span>
+    </p>
+</div>
+    <script src="triangle.js"></script>
+
+    <!-- Multiply&Divide -->
+    <div class="calculator-box">
+      <h1>2. Simple Calculator</h1>
+      <input type="number" id="num1" placeholder="Enter first number" />
+      <input type="number" id="num2" placeholder="Enter second number" />
+      <div>
+        <button id="multiply">Multiply</button>
+        <button id="divide">Divide</button>
+      </div>
+      <div id="result"></div>
+    </div>
+    <script src="multiply-divide.js"></script>
+
+    <!-- Temp-converter -->
+     <div class="temp-box">
+    <h1>3. Temperature Conversion</h1>
+    <p><strong>Celsius to Fahrenheit:</strong></p>
+    <input type="number" id="celsius" placeholder="Enter temperature in °C" />
+    <button id="convertCtoF">Convert C → F</button>
+    <p class="result" id="resultCtoF"></p>
+
+    <p><strong>Fahrenheit to Celsius:</strong></p>
+    <input
+      type="number"
+      id="fahrenheit"
+      placeholder="Enter temperature in °F"
+    />
+    <button id="convertFtoC">Convert F → C</button>
+    <p class="result" id="resultFtoC"></p>
+</div>
+    <script src="celsius-fahrenheit.js"></script>
+
+  <!-- Difference from 13 -->
+  <div class="section-box">
+    <h1>4. Difference from 13</h1>
+    <input type="number" id="numberDiff" placeholder="Enter a number">
+    <button id="calcDiff">Calculate Difference</button>
+    <p class="result" id="resultDiff"></p>
+  </div>
+  <script src="diff-bw-nums.js"></script>
+
+  <!-- Largest of Three Integers -->
+   <div class="largest-three-box">
+    <h1>5. Largest of Three Integers</h1>
+    <input type="number" id="numA" placeholder="Enter first number">
+    <input type="number" id="numB" placeholder="Enter second number">
+    <input type="number" id="numC" placeholder="Enter third number">
+    <button id="findLargest">Find Largest</button>
+    <p class="result" id="resultLargest"></p>
+</div>
+    <script src="lagrest-of-three.js"></script>
+
+
+    <!-- Check Student Grade -->
+     <div class="grade-box">
+    <h1>6. Check Student Grade</h1>
+    <input type="number" id="marks" placeholder="Enter total marks">
+    <input type="text" id="examType" placeholder="Enter exam type (e.g., Final-exam or Other)">
+    <button id="checkGrade">Check A+ Grade</button>
+    <p class="result" id="resultGrade"></p>
+</div>
+  <script src="student-grade.js"></script>
+  </body>
+</html>

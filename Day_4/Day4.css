@@ -1,0 +1,75 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    margin: 20px;
+    line-height: 1.6;
+  }
+  
+  /* Headings */
+  h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Paragraphs */
+  p {
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  /* Input Fields */
+  input[type="number"],
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Buttons */
+  button {
+    padding: 10px 20px;
+    margin: 10px 5px 10px 0;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background: #2980b9;
+  }
+  
+  /* Result Display */
+  .result {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #ecf0f1;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+  
+  /* Box Containers for Grouping Elements */
+  .triangle-box,
+  .calculator-box,
+  .temp-box,
+  .section-box,
+  .largest-three-box,
+  .grade-box {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    background: #fff;
+  }
+  
