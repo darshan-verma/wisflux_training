@@ -3,17 +3,25 @@ import { SearchBar } from "../components/SearchBar";
 import { PhotoGrid } from "../components/PhotoGrid";
 import { useFavorites } from "../hooks/userFavorites";
 import { Photo } from "../types";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export const HomePage = () => {
   const [photos, setPhotos] = useState<Photo[]>([]);
   const [error, setError] = useState("");
   const { favorites, add, remove } = useFavorites();
+  useEffect(() => {
+    const storedPhotos = localStorage.getItem("searchResults");
 
+    if (storedPhotos) {
+      setPhotos(JSON.parse(storedPhotos));
+    }
+  }, []);
   const onSearch = async (q: string) => {
     if (!q) return setPhotos([]);
     try {
       const res = await searchPhotos(q);
+      localStorage.setItem("searchText", q);
+      localStorage.setItem("searchResults", JSON.stringify(res));
       setPhotos(res);
       setError(res.length ? "" : "No photos found");
     } catch {

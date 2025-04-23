@@ -16,6 +16,8 @@ export const SearchBar: FC<Props> = ({ onSearch }) => {
   }, 500);
 
   useEffect(() => {
+    const storedSearchText = localStorage.getItem("searchText");
+    setTerm(storedSearchText || "");
     debounced(term);
     return debounced.cancel;
   }, [term]);
@@ -30,7 +32,9 @@ export const SearchBar: FC<Props> = ({ onSearch }) => {
           placeholder="Search for amazing photos..."
           value={term}
           onChange={(e: ChangeEvent<HTMLInputElement>) =>
-            setTerm(e.target.value)
+            {localStorage.setItem("searchText", e.target.value)
+            setTerm(e.target.value)}
+
           }
         />
       </div>

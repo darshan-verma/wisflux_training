@@ -3,6 +3,9 @@ import { PhotoGrid } from "../components/PhotoGrid";
 import { Photo } from "../types";
 import { useEffect } from "react";
 
+const STORAGE_KEY = "unsplash_favorites";
+
+
 export const FavoritesPage = () => {
   const { favorites, remove } = useFavorites();
 

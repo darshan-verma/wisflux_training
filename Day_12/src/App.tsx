@@ -3,6 +3,7 @@ import { HomePage } from "./pages/HomePage";
 import { FavoritesPage } from "./pages/FavoritesPage";
 import { Heart, House } from "react-bootstrap-icons";
 
+
 export default function App() {
   return (
     <BrowserRouter>

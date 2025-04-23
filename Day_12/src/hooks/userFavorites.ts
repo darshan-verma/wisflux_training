@@ -28,26 +28,29 @@ export function useFavorites() {
       }
     } catch (error) {
       console.error("Error loading favorites:", error);
-      localStorage.removeItem(STORAGE_KEY);
+      // localStorage.removeItem(STORAGE_KEY);
     }
   }, []);
 
   // Save favorites to localStorage whenever they change
   useEffect(() => {
-    try {
-      // Only save the essential photo data
-      const photosToSave = favorites.map(photo => ({
-        id: photo.id,
-        alt_description: photo.alt_description || '',
-        urls: {
-          small: photo.urls.small,
-          regular: photo.urls.regular
-        }
-      }));
-      console.log("Saving to localStorage:", photosToSave);
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(photosToSave));
-    } catch (error) {
-      console.error("Error saving favorites:", error);
+    if (favorites.length > 0) {
+      try {
+        // Only save the essential photo data
+        console.log("Here's the favorites to save:", favorites);
+        const photosToSave = favorites.map(photo => ({
+          id: photo.id,
+          alt_description: photo.alt_description || '',
+          urls: {
+            small: photo.urls.small,
+            regular: photo.urls.regular
+          }
+        }));
+        console.log("Saving to localStorage:", photosToSave);
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(photosToSave));
+      } catch (error) {
+        console.error("Error saving favorites:", error);
+      }
     }
   }, [favorites]);
 
